@@ -58,6 +58,7 @@ endif()
 
 add_library(cxxopts INTERFACE)
 add_library(cxxopts::cxxopts ALIAS cxxopts)
+target_include_directories(cxxopts INTERFACE include)
 add_subdirectory(include)
 
 # Link against the ICU library when requested
